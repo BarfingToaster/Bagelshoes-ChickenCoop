@@ -1,0 +1,49 @@
+<config>
+<append xpath="/blocks">
+	<block name="ChickenCoop">
+		<property name="Class" value="PlantGrowing"/>
+		<property name="DisplayType" value="blockMulti"/>
+		<property name="Material" value="Mwood"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="Group" value="Building,advBuilding"/>
+		<property name="DescriptionKey" value="ChickenCoopDesc"/>
+		<property name="Model" value="Entities/OutdoorDecor/classicDogHousePrefab"/>
+		<property name="ModelOffset" value="0,0,0"/>
+		<property name="TintColor" value="FF8080"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="MultiBlockDim" value="1,1,2"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Path" value="solid"/>
+		<property name="EconomicValue" value="200"/>
+		<property name="Collide" value="movement,rockets,sight,melee"/>
+		<property name="CustomIcon" value="decoClassicDogHouse"/>
+		<property name="CustomIconTint" value="FF8080"/>
+		<property class="PlantGrowing">
+			<property name="Next" value="ChickenCoopFull"/>
+			<property name="GrowthRate" value="55"/>
+			<property name="FertileLevel" value="0"/>
+			<property name="IsRandom" value="false"/> 
+		</property>
+		<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+	</block>
+	
+	<block name="ChickenCoopFull">
+		<property name="Class" value="Loot"/>
+		<property name="DisplayType" value="blockMulti"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Material" value="Mwood"/>
+		<property name="Model" value="Entities/OutdoorDecor/classicDogHousePrefab"/>
+		<property name="ModelOffset" value="0,0,0"/>
+		<property name="TintColor" value="80FF80"/>
+		<property name="StabilitySupport" value="false"/>
+		<property name="MultiBlockDim" value="1,1,2"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Path" value="solid"/>
+		<property name="Collide" value="movement,rockets,sight,melee"/>
+		<property name="LootList" value="ChickenCoop"/>
+		<property name="CustomIcon" value="decoClassicDogHouse"/>
+		<property name="CustomIconTint" value="8080FF"/>
+		<property name="DowngradeBlock" value="ChickenCoop"/>
+	</block>
+</append>
+</config>

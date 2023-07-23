@@ -1,0 +1,4 @@
+Key,File,Type,english
+ChickenCoop,Blocks,block,Chicken Coop
+ChickenCoopDesc,Blocks,block,"Collect eggs daily from your own personal chicken coop."
+ChickenCoopFull,Blocks,block,Full Chicken Coop
